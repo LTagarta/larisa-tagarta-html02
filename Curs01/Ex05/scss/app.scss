@@ -1,0 +1,63 @@
+$hover: magenta;
+$active: pink;
+$visited: lightcoral;
+
+ol {
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $hover;
+    }
+    &:active {
+      color: $active;
+    }
+    &:visited {
+      color: $visited;
+    }
+  }
+}
+
+ul {
+  a {
+    text-decoration: none;
+    &:hover {
+      color: red;
+    }
+    &:active {
+      color: purple;
+    }
+    &:visited {
+      color: green;
+    }
+  }
+}
+
+.para {
+  padding: {
+    top: 10px;
+    bottom: 10px;
+    right: 20px;
+    left: 20px;
+  }
+
+  .reverse & {
+    width: 50%;
+    padding: 0;
+  }
+}
+
+.para-short {
+  width: 50%;
+  margin: 0 auto;
+
+  .reverse & {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+
+a {
+  .all-visited & {
+    text-decoration: line-through;
+  }
+}

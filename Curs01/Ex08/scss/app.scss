@@ -2,8 +2,8 @@
   width: 80%;
   border: 1px solid black;
   padding: 10px;
-  margin: 0 auto;
-  display: flex;
+  margin: auto;
+  align-items: center;
 }
 
 .square {
@@ -14,54 +14,44 @@
 }
 
 .square-magenta {
+  @extend .square;
   background-color: magenta;
 }
 
 .square-peru {
+  @extend .square;
   background-color: peru;
 }
 
 .square-purple {
+  @extend .square;
   background-color: purple;
 }
 
 .circles {
-  width: 75%;
-  margin: 0 auto;
-  border: 2px dotted brown;
-  border-radius: 20px;
+  width: 80%;
+  border: 1px solid black;
 }
 
 .circle {
   width: 200px;
   height: 200px;
-  border: 3px solid red;
+  border: 1px solid black;
   border-radius: 50%;
-  background-color: purple;
-}
-
-.circles {
-  width: 200px;
-  height: 200px;
-  border: 3px solid red;
-  border-radius: 50%;
-  background-color: purple;
+  background-color: brown;
 }
 
 .circle-red {
+  @extend .circle;
   background-color: red;
 }
 
 .circle-green {
+  @extend .circle;
   background-color: green;
 }
 
 .circle-blue {
+  @extend .circle;
   background-color: blue;
 }
-
-.circle-border-blue {
-  border: blue;
-}
-
-/*# sourceMappingURL=style.css.map */
